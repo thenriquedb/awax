@@ -39,6 +39,7 @@ body {
   border: none;
   font-size: 14px;
   outline: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -181,14 +182,14 @@ body {
 .section-content {
   margin: auto;
   max-width: 1140px;
-  min-height: 100px;
 }
 
 .section.dark {
   background-color: #000;
 }
 
-.section.dark .section-title {
+.section.dark .section-title,
+.section.dark .section-content {
   color: #fff;
 }
 
@@ -196,6 +197,30 @@ body {
   background-color: #f7f7f7;
 }
 
-.section.light .section-title {
+.section.light .section-title,
+.section.light .section-content {
   color: #000;
+}
+
+/* CSS de ÁREAS ESPECÍFICAS */
+.section-aboutus {
+  display: flex;
+}
+.section-aboutus--left {
+  flex: 1;
+}
+.section-aboutus--right {
+  width: 520px;
+  text-align: center;
+}
+
+.section-aboutus--right img {
+  width: 350px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+.section-aboutus--left p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 25px;
 }
