@@ -639,6 +639,7 @@ body {
 /* Some Facts */
 .section-some-facts {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .section-some-fact {
@@ -896,8 +897,9 @@ footer {
   color: #b28756;
 }
 
-@media (min-width: 450px) and (max-width: 800px) {
 
+/* Responsivo Tablet */
+@media (min-width: 450px) and (max-width: 800px) {
   .header-content {
     justify-content: space-between;
     margin: 0px 20px;
@@ -1031,6 +1033,235 @@ footer {
 
   .section-contact {
     padding: 0 30px;
+  }
+
+  .section-map--info {
+    max-width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  .section-map--info-item {
+    margin-top: 25px;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+  }
+
+  .footer-content .col {
+    width: 100%;
+    margin: 10px 40px
+  }
+}
+
+/* Responsivo Celular */
+@media (max-width: 450px) {
+  .header-content {
+    justify-content: space-between;
+    margin: 0px 20px;
+  }
+
+
+  .menu-hamburguer {
+    display: inline;
+  }
+
+  #menu {
+    width: 60vw;
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    top: 100px;
+    position: absolute;
+    z-index: 99;
+    display: none;
+  }
+
+  #menu {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    top: 100px;
+    position: absolute;
+    z-index: 99;
+  }
+
+  #menu ul {
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px 45px
+  }
+
+  #menu ul li {
+    height: 40px;
+    margin: 5px 0px;
+  }
+
+  #menu li a {
+    font-weight: bold !important;
+    font-size: 20px;
+    border: 0;
+  }
+
+  #menu li a:hover,
+  #menu .active a {
+    color: #b28756cc;
+    border-bottom: 0;
+  }
+
+  .banner-carousel .carousel-content h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  .banner-carousel .carousel-content h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .section-aboutus {
+    flex-direction: column;
+  }
+
+  .section-aboutus p {
+    padding: 0 30px;
+  }
+
+  .section-aboutus .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .section-aboutus .section-aboutus--right {
+    width: 100vw;
+  }
+
+  .section-aboutus .section-aboutus--right img {
+    width: 350px;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+
+  .section-service {
+    min-width: 100%;
+    border: 0;
+    margin-bottom: 25px;
+  }
+
+  .section-service p {
+    font-size: 16px;
+  }
+
+
+  .section-ourteam {
+    max-width: 580px;
+  }
+
+  .section-clients-reviews .carousel-content p {
+    padding: 0 30px;
+  }
+
+
+  .partner-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-partners--container img {
+    height: auto;
+  }
+
+  .section-prices {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .section-prices--card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section-premium {
+    flex-wrap: wrap;
+  }
+
+  .section-premium--left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .section-premium--right .item {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+
+  .section-social--container h1 {
+    display: none;
+  }
+
+  .section-some-facts {
+    display: block;
+    padding: 0px 30px;
+  }
+
+  .section-some-fact h1 {
+    font-size: 72px;
+    margin-bottom: 0px;
+  }
+
+  .section-some-fact h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .section-some-fact p {
+    font-size: 16px;
+  }
+
+  .section-social--container .icon {
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-social--container .icon img {
+    margin: auto;
+  }
+
+
+  .share-icon {
+    display: none;
+  }
+
+  .section-map {
+    padding: 30px;
+  }
+
+  .section-contact {
+    padding: 0 15px;
+  }
+
+  .section-contact .row {
+    padding-right: 15px;
+    flex-direction: column;
+  }
+
+  .section-contact .row input:first-of-type {
+    margin-bottom: 40px;
   }
 
   .section-map--info {
