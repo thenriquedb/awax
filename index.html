@@ -18,7 +18,8 @@
           <div class="logoImg "></div>
         </a>
       </div>
-
+      
+      <img class="menu-hamburguer " src="./assets/images/icons/menu.png"/>
       <nav id="menu">
         <ul>
           <li class="active"> <a href="#"> Home </a> </li>
@@ -45,7 +46,7 @@
             <h1 class="text-white"> DESIGN IS ABOUT</h1>
             <h1 class="primary"> COMMUNICATION</h1>
             <h2 class="text-white"> CALL US: +00 0 1234 5678 </h2>
-            <button class="btn btn-primary"> GET IN TOUCH! </button>
+             <button class="btn btn-primary"> GET IN TOUCH! </button>
           </div>
         </div>
 
@@ -78,8 +79,9 @@
               Proin dui arcu, pretium quis condimentum nec, mollis non urna. Suspendisse velit mi, accumsan vel aliquam
               ac, posuere in massa.
             </p>
-            <button class="btn btn-primary btn-sm"> GET IN TOUCH! </button>
-
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sm"> GET IN TOUCH! </button>
+            </div>
           </div>
           <div class="section-aboutus--right">
             <img src="./media/foto10.jpg" alt="">
@@ -280,7 +282,7 @@
                   <h3> Max Caulfield </h3>
                   <p> Photographer </p>
 
-                  <div class="social-container">
+                  <div class="social--container">
                     <a href="#"> <img src="./assets/images/icons/linkedin.png"> </a>
                     <a href="#"> <img src="./assets/images/icons/facebook.png"> </a>
                     <a href="#"> <img src="./assets/images/icons/twitter.png"> </a>
@@ -349,7 +351,7 @@
 
           <div class="carousel-item" alt="Primeiro Slide">
             <div class="carousel-content">
-              <img src="./media/homem1.png" />
+              <img class="avatar" src="./media/homem1.png" />
               <h3> Jason Dessen</h3>
               <h4> Head of PR Departament</h4>
               <img src="./assets/images/icons/quote.png" alt="">
@@ -627,7 +629,7 @@
 
               <div class="row">
                   <button  class="btn btn-primary" type="submit"> SEND MESSAGE </button>
-              </div>>
+              </div>
             </form>
 
           </div>
@@ -678,7 +680,30 @@
 
   <footer >
     <div class="footer-content">
-      <div class="col social"> 1 </div>
+      <div class="col social"> 
+          <div class="footer--social-icons">
+              <div class="icon">
+                <img src="./assets/images/icons/linkedin.png" />
+              </div>
+
+              <div class="icon">
+                <img src="./assets/images/icons/facebook.png" />
+              </div>
+
+              <div class="icon">
+                <img src="./assets/images/icons/twitter.png" />
+              </div>
+
+              <div class="icon">
+                <img src="./assets/images/icons/googleplus.png" />
+              </div>
+
+              <div class="icon">
+                <img src="./assets/images/icons/pinterest.png" />
+              </div>
+            </div>
+      </div>
+
       <div class="col description">
         <p>
             Nam rutrum arcu ornare orci sollicitudin convallis. Nunc feugiat tellus eros, sit amet sodales justo pellentesque 
@@ -688,6 +713,7 @@
             accumsan augue sed commodo.
         </p>
       </div>
+
       <div class="col newsletter"> 
           <form>
               <input type="text" placeholder="Email to subscribe"> 
@@ -695,6 +721,8 @@
             </form>  
       </div>
     </div>
+    <p class="footer-message"> 
+      <a href="https://www.behance.net/gallery/58301549/Free-Landing-Page" target="blank"> AWAX </a> | <a href="https://github.com/thenriquedb" target="_blank"> THENRIQUEDB </a></p>
   </footer>
 </body>
 
